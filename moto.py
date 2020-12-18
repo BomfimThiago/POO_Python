@@ -14,7 +14,7 @@ class Moto(Automovel):
 
     def acelera(self):
         # aqui o super está pegando a velocidade definida em Automovel
-        if self.velocidade > self.VELOCIDADE_MAXIMA:
+        if self.velocidade >= self.VELOCIDADE_MAXIMA:
             self.velocidade = 160
             raise ValueError('Velocidade Máxima atinginda')
 

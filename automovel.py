@@ -16,35 +16,35 @@ class Automovel(ABC):
         # o mesmo ocorre para o _modelo e _velocidade
         # quando usamos o underscore por convenção dizemos que esse é um atributo protegido
         # que só será acessível por meio de um get e um set
-        self._velocidade = 100
-        self._marca = marca
-        self._modelo = modelo
+        self.__velocidade = 100
+        self.___marca = marca
+        self.___modelo = modelo
 
     # Para definir um getter e setter em python podemos usar os decorators @property que é o getter
     # E @atributo.setter que é o setter
     @property
     def velocidade(self):
-        return self._velocidade
+        return self.__velocidade
 
     @velocidade.setter
     def velocidade(self, vel):
-        self._velocidade = vel
+        self.__velocidade = vel
 
     @property
     def marca(self):
-        return self._marca
+        return self.__marca
 
     @marca.setter
     def marca(self, marca):
-        self._marca = marca
+        self.__marca = marca
 
     @property
     def modelo(self):
-        return self._modelo
+        return self.__modelo
 
     @modelo.setter
     def modelo(self, modelo):
-        self._modelo = modelo
+        self.__modelo = modelo
 
     # Esse método abstract obriga a classe filha de automovel a implementar uma função acelera
     # Implementei assim porque o acelera vai depender da velocidade máxima da classe de Carro ou Moto
@@ -56,4 +56,4 @@ class Automovel(ABC):
         if self.velocidade <= 0:
             self.velocidade = 0
             raise ValueError('Automóvel já com velocidade igual a 0')
-        self._velocidade -= 30
+        self.velocidade -= 30

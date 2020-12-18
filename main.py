@@ -1,6 +1,6 @@
-from Automovel import Automovel
-from Carro import Carro
-from Moto import Moto
+from automovel import Automovel
+from carro import Carro
+from moto import Moto
 
 if __name__ == '__main__':
     c = Carro('Chevrolet', 'Onix')
@@ -24,7 +24,7 @@ if __name__ == '__main__':
     # sizeof traz o tamanho da instancia em bytes
     print('c.__sizeof__ ', c.__sizeof__())
     # Podemos também ver se Carro é uma instancia de Automovel
-    print('isinstance(c, Automovel) ',isinstance(c, Automovel))
+    print('isinstance(c, Automovel) ', isinstance(c, Automovel))
 
 
     # Podemos também usar os métodos criados por nós na classe

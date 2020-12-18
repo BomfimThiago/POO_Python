@@ -1,4 +1,4 @@
-from Automovel import Automovel
+from automovel import Automovel
 
 class Carro(Automovel):
     """ Classe de Carro que herda de Automóvel"""
@@ -14,7 +14,7 @@ class Carro(Automovel):
 
     def acelera(self):
         # aqui o super está pegando a velocidade definida em Automovel
-        if self.velocidade > self.VELOCIDADE_MAXIMA:
+        if self.velocidade >= self.VELOCIDADE_MAXIMA:
             self.velocidade = 180
             raise ValueError('Velocidade Máxima atinginda')
 
