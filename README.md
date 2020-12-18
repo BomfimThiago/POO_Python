@@ -5,3 +5,6 @@
 
 ##### Comparar objetos
 https://www.alura.com.br/artigos/como-comparar-objetos-no-python
+
+##### Python MRO
+https://www.geeksforgeeks.org/method-resolution-order-in-python-inheritance/
